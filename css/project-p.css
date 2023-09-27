@@ -1,0 +1,110 @@
+@import "./reset.css";
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: -0.5px;
+    background-image: url(./order-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 750px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+.project-details {
+    text-align: center;
+    max-width: 865px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    margin: 0 400px;
+}
+
+.project-det-title {
+    margin: 15px 0;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.project-det-img {
+    max-width: 700px;
+    
+    margin: 0 5px 20px 5px;
+
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+
+
+.btn-s {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    height: 48px;
+    padding: 12px 20px;
+
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.btn.back {
+    margin-left: 15px;
+}
+
+.btn:hover {
+    background-color: #0daaf3;
+}
+
+@media screen and (max-width: 730px) {
+    
+   
+
+    .project-det-img {
+        width: 600px;
+    }
+}
+
+
+@media screen and (max-width: 635px) {
+
+    .project-det-img {
+        width: 500px;
+    }
+
+  }
+
+  @media screen and (max-width: 510px) {
+    .project-det-img {
+        width: 400px;
+        }
+  }
+
+  @media screen and (max-width: 400px) {
+    .project-det-img {
+        width: 250px;
+        }
+  }
